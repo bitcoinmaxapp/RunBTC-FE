@@ -1,2 +1,2 @@
 # runbtc-fe
-RunBTC app FE
+RunBTC Frontend
