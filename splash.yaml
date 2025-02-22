@@ -1,0 +1,13 @@
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#272727"
+  image: /Users/efecini/Projects/RunBTC/skin/assets/logos/logo.png
+  image_dark: /Users/efecini/Projects/RunBTC/skin/assets/logos/logo.png
+
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#272727"
+    image: /Users/efecini/Projects/RunBTC/skin/assets/logos/logo.png
+    image_dark: /Users/efecini/Projects/RunBTC/skin/assets/logos/logo.png
+
+  web: false
