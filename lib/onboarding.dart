@@ -44,12 +44,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     //Images
-                    Image.asset(controller.items[currentIndex].image),
+                    Image.asset(controller.items[index].image),
 
                     const SizedBox(height: 15),
                     //Titles
                     Text(
-                      controller.items[currentIndex].title,
+                      controller.items[index].title,
                       style: const TextStyle(
                           fontSize: 25,
                           color: Color.fromARGB(255, 200, 113, 42),
@@ -61,7 +61,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 25),
                       child: Text(
-                        controller.items[currentIndex].description,
+                        controller.items[index].description,
                         style:
                             const TextStyle(color: Colors.grey, fontSize: 16),
                         textAlign: TextAlign.center,
