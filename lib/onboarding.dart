@@ -31,6 +31,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
     return Expanded(
       child: Center(
         child: PageView.builder(
+            controller: pageController,
             onPageChanged: (value) {
               setState(() {
                 currentIndex = value;
@@ -103,9 +104,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
           borderRadius: BorderRadius.circular(8), color: primaryColor),
       child: TextButton(
         onPressed: () {
-          setState(() {
-            currentIndex != controller.items.length - 1 ? currentIndex++ : null;
-          });
+          if (currentIndex != controller.items.length - 1) {
+            pageController.nextPage(
+                duration: const Duration(milliseconds: 400),
+                curve: Curves.easeIn);
+          } else {}
         },
         child: Text(
           currentIndex == controller.items.length - 1
