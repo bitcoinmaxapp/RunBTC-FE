@@ -106,7 +106,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         onPressed: () {
           if (currentIndex != controller.items.length - 1) {
             pageController.nextPage(
-                duration: const Duration(milliseconds: 400),
+                duration: const Duration(milliseconds: 600),
                 curve: Curves.easeIn);
           } else {}
         },
